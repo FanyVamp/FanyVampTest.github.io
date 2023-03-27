@@ -1,0 +1,64 @@
+/* Estilos para la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #1c1c1c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #1c1c1c;
+}
+
+/* Estilos para la sección del stream */
+.stream {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* Estilos para la sección "Sobre mí" */
+.about {
+  margin: 2rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
