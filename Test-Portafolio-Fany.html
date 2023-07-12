@@ -6,12 +6,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
   <link rel="shortcut icon" href="https://fanyvamp.github.io/Sources/Icon/Logo.ico">
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      background-color: cornflowerblue;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
-      margin: 0;
+      background-color: cornflowerblue;
+    }
+
+    .content {
+      flex: 1 0 auto;
+      padding: 20px;
+    }
+
+    .footer {
+      flex-shrink: 0;
+      background-color: #343a40;
+      color: white;
+      padding: 20px;
     }
 
     nav {
@@ -90,75 +106,77 @@
     </div>
   </nav>
 
-  <h1>Comisiones</h1>
+  <div class="content">
+    <h1>Comisiones</h1>
 
-  <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
-      <div class="col">
-        <div class="card">
-          <img src="https://pbs.twimg.com/media/F0XVs-7XwAEPaDQ?format=jpg&name=medium" class="card-img-top img-fluid rounded" alt="Imagen 1">
-          <div class="card-body">
-            <h5 class="card-title">YCH</h5>
-            <p class="card-text">Tu Personaje</p>
-            <a href="https://ko-fi.com/fanyvamp/shop" class="btn btn-primary">$5</a>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="https://pbs.twimg.com/media/F0XVs-7XwAEPaDQ?format=jpg&name=medium" class="card-img-top img-fluid rounded" alt="Imagen 1">
+            <div class="card-body">
+              <h5 class="card-title">YCH</h5>
+              <p class="card-text">Tu Personaje</p>
+              <a href="https://ko-fi.com/fanyvamp/shop" class="btn btn-primary">$5</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="https://pbs.twimg.com/media/F0VeNd_XoAEkEHv?format=png&name=small" class="card-img-top img-fluid rounded" alt="Imagen 2">
-          <div class="card-body">
-            <h5 class="card-title">YCH</h5>
-            <p class="card-text">Tu Personaje</p>
-            <a href="https://ko-fi.com/fanyvamp/shop" class="btn btn-primary">$5</a>
+        <div class="col">
+          <div class="card">
+            <img src="https://pbs.twimg.com/media/F0VeNd_XoAEkEHv?format=png&name=small" class="card-img-top img-fluid rounded" alt="Imagen 2">
+            <div class="card-body">
+              <h5 class="card-title">YCH</h5>
+              <p class="card-text">Tu Personaje</p>
+              <a href="https://ko-fi.com/fanyvamp/shop" class="btn btn-primary">$5</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="https://pbs.twimg.com/media/F0Ummr9WwAAumE1?format=jpg&name=medium" class="card-img-top img-fluid rounded" alt="Imagen 3">
-          <div class="card-body">
-            <h5 class="card-title">YCH</h5>
-            <p class="card-text">Tu Personaje.</p>
-            <a href="https://ko-fi.com/fanyvamp/shop" class="btn btn-primary">$5</a>
+        <div class="col">
+          <div class="card">
+            <img src="https://pbs.twimg.com/media/F0Ummr9WwAAumE1?format=jpg&name=medium" class="card-img-top img-fluid rounded" alt="Imagen 3">
+            <div class="card-body">
+              <h5 class="card-title">YCH</h5>
+              <p class="card-text">Tu Personaje.</p>
+              <a href="https://ko-fi.com/fanyvamp/shop" class="btn btn-primary">$5</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="https://pbs.twimg.com/media/F0LNI95WwAAc6fR?format=png&name=small" class="card-img-top img-fluid rounded" alt="Imagen 4">
-          <div class="card-body">
-            <h5 class="card-title">Chibi</h5>
-            <p class="card-text">Full Body</p>
-            <a href="https://ko-fi.com/s/3efc460812" class="btn btn-primary">$5</a>
+        <div class="col">
+          <div class="card">
+            <img src="https://pbs.twimg.com/media/F0LNI95WwAAc6fR?format=png&name=small" class="card-img-top img-fluid rounded" alt="Imagen 4">
+            <div class="card-body">
+              <h5 class="card-title">Chibi</h5>
+              <p class="card-text">Full Body</p>
+              <a href="https://ko-fi.com/s/3efc460812" class="btn btn-primary">$5</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="https://pbs.twimg.com/media/F0GCJehXsAAfgop?format=png&name=small" class="card-img-top img-fluid rounded" alt="Imagen 5">
-          <div class="card-body">
-            <h5 class="card-title">Chibi</h5>
-            <p class="card-text">Full Body</p>
-            <a href="https://ko-fi.com/s/3efc460812" class="btn btn-primary">$5</a>
+        <div class="col">
+          <div class="card">
+            <img src="https://pbs.twimg.com/media/F0GCJehXsAAfgop?format=png&name=small" class="card-img-top img-fluid rounded" alt="Imagen 5">
+            <div class="card-body">
+              <h5 class="card-title">Chibi</h5>
+              <p class="card-text">Full Body</p>
+              <a href="https://ko-fi.com/s/3efc460812" class="btn btn-primary">$5</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="https://pbs.twimg.com/media/F0w1D1xaEAY1tFP?format=jpg&name=medium" class="card-img-top img-fluid rounded" alt="Imagen 5">
-          <div class="card-body">
-            <h5 class="card-title">PNGTuber</h5>
-            <p class="card-text">Vtuber En PNG</p>
-            <a href="https://ko-fi.com/fanyvamp/shop" class="btn btn-primary">$8</a>
+        <div class="col">
+          <div class="card">
+            <img src="https://pbs.twimg.com/media/F0w1D1xaEAY1tFP?format=jpg&name=medium" class="card-img-top img-fluid rounded" alt="Imagen 6">
+            <div class="card-body">
+              <h5 class="card-title">PNGTuber</h5>
+              <p class="card-text">Vtuber En PNG</p>
+              <a href="https://ko-fi.com/fanyvamp/shop" class="btn btn-primary">$8</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="text-center">
+  <footer class="footer">
+    <div class="container text-center">
       <h1>Redes</h1>
       <a href="https://www.instagram.com/fanyvampart" class="btn mx-2 fw-bold text-light" target="_blank">Instagram</a>
       <a href="https://twitter.com/FanyVamp" class="btn mx-2 fw-bold text-light" target="_blank">Twitter</a>
