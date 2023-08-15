@@ -42,18 +42,26 @@
   <div class="container my-2">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <iframe class="BG"
-          src="https://player.twitch.tv/?channel=fanyvamp&parent=FanyVamp.github.io"
-          height="414px"
-          width="100%"
-          frameborder="0"
-          scrolling="no"
-          allowfullscreen="true"
-          id="chat_embed"
-          src="https://www.twitch.tv/embed/fanyvamp/chat?parent=FanyVamp.github.io"
-          height="500"
-          width="350">
-        </iframe>
+        <div class="BG" id="twitch-embed">
+          <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+          <script type="text/javascript">
+            var embed = new Twitch.Embed("twitch-embed", {
+              width: 854,
+              height: 480,
+              channel: "fanyvamp",
+              layout: "video",
+              autoplay: false,
+              parent: ["https://fanyvamp.github.io/"]
+            });
+      
+            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+              var player = embed.getPlayer();
+              player.play();
+            });
+          </script>
+          
+        </div>
       </div>
     </div>
   </div>
@@ -87,7 +95,7 @@
 
   </div class="container">
 
-  <iframe src="https://ko-fi.com/fanyvamp/goal?g=7" width="300" height="250" frameborder="0"></iframe>
+  <iframe id='kofiframe' src='https://ko-fi.com/streamalerts/goaloverlay/sa_da35f351-ce84-4a00-89e7-cc3d4c56bc11'></iframe>
 
     <div>
         <div id="fanarts" class="BG"><h1 class="text-center fw-bold">FanArts</h1></div>
@@ -115,11 +123,13 @@
           <a href="https://www.youtube.com/@fany_vamp" class="btn btn-custom active mx-2 YouTube fw-bold text-light" target="_blank"><img src="https://www.youtube.com/favicon.ico"></a></a>
           <a href="https://www.tiktok.com/@fany_vamp" class="btn btn-custom active mx-2 TikTok fw-bold text-light" target="_blank"><img src="https://www.tiktok.com/favicon.ico"></a></a>
           <a href="https://noveltoon.mobi/es/la-traicion-del-reino?content_id=3065102" class="btn btn-custom active mx-2 Discord fw-bold text-light" target="_blank"><img src="https://noveltoon.mobi/official/noveltoon/icon-128.png"></a></a>         
-          <a href="https://discord.gg/AzzJGkstsz" class="btn btn-custom active mx-2 Discord fw-bold text-light" target="_blank"><img src="https://discord.com/assets/847541504914fd33810e70a0ea73177e.ico"></a></a>          
-          </div>          
+          <a href="https://discord.gg/AzzJGkstsz" class="btn btn-custom active mx-2 Discord fw-bold text-light" target="_blank"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg" style="width: 40px; height: auto;"></a></a>          
+          </div>        
       </div>
     </div>
   </div>
+
+
       <footer>
         <div class="container">
           <div class="row">
@@ -131,6 +141,6 @@
         </div>
       </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
-      
+
     </body>
     </html>
