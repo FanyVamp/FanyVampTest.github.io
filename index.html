@@ -42,26 +42,27 @@
   <div class="container my-2">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <div class="BG" id="twitch-embed">
-          <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-          <script type="text/javascript">
-            var embed = new Twitch.Embed("twitch-embed", {
-              width: 854,
-              height: 480,
-              channel: "fanyvamp",
-              layout: "video",
-              autoplay: false,
-              parent: ["https://fanyvamp.github.io/FanyVampTest.github.io/", "https://fanyvamp.github.io/"]
-            });
-      
-            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-              var player = embed.getPlayer();
-              player.play();
-            });
-          </script>
+        <div class="BG" id="twitch-player">
           
         </div>
+        <div class="bg" id="twitch-chat">
+          
+        </div>
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        <script>
+          new Twitch.Embed("twitch-player", {
+              width: 800,
+              height: 400,
+              channel: "fanyvamp"
+          });
+  
+          new Twitch.Embed("twitch-chat", {
+              width: 400,
+              height: 500,
+              channel: "fanyvamp",
+              layout: "video"
+          });
+      </script>
       </div>
     </div>
   </div>
