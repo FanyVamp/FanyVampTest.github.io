@@ -22,19 +22,19 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav me-lg-5">
                 <li class="nav-item">
-                    <a class="nav-link fw-bold text-light" href="#twitch" onclick="hideHash()">Twitch</a>
+                    <a class="nav-link fw-bold text-light" href="#twitch">Twitch</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold text-light" href="#sobre-mi" onclick="hideHash()">Sobre mí</a>
+                    <a class="nav-link fw-bold text-light" href="#sobre-mi">Sobre mí</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold text-light" href="#novedades" onclick="hideHash()">Novedades</a>
+                    <a class="nav-link fw-bold text-light" href="#novedades">Novedades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold text-light" href="#fanarts" onclick="hideHash()">FanArts</a>
+                    <a class="nav-link fw-bold text-light" href="#fanarts">FanArts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold text-light" href="#redes" onclick="hideHash()">Redes</a>
+                    <a class="nav-link fw-bold text-light" href="#redes">Redes</a>
                 </li>
             </ul>
         </div>
@@ -149,13 +149,31 @@
     </script>
     <script>
 function hideHash() {
-      
-      history.pushState(null, null, 'fanyvamp.github.io');
-      
-     
+  history.replaceState({}, document.title, window.location.href.split("#")[0]);
     }
     </script>
     
+    <script>
+    function scrollToSection(sectionId) {
+  var div = document.getElementById(sectionId);
+  div.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest"
+  });
+}
+
+window.onload = function() {
+  // Add event listeners to the navigation links
+  var links = document.querySelectorAll("nav a");
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function(event) {
+      event.preventDefault();
+      scrollToSection(this.href.split("#")[1]);
+    });
+  }
+};
+    </script>
 
     </body>
     </html>
