@@ -2,6 +2,7 @@ const folderUrl = 'https://api.github.com/repos/fanyvamp/fanyvamptest.github.io/
     fetch(folderUrl)
         .then(response => response.json())
         .then(data => {
+            data.reverse();
             const imageContainer = document.getElementById('imageContainer');
             data.filter(item => item.type === 'file').forEach(item => {
                 const imgUrl = item.download_url;
