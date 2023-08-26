@@ -7,67 +7,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="Sources/Icon/Logo.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="FanyVamp.css"> 
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+  <link rel="stylesheet" href="Sources/Resources/FanyVamp.css"> 
   <script src="https://unpkg.com/scrollreveal"></script>
-  
+  <script src="Sources/Resources/ScrollReveal.js"></script>
+  <script src="Sources/Resources/ScrollSection.js"></script>
 </head>
-<body data-bs-target="#navbar" data-bs-offset="70" class="scrollspy">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" class="scrollspy">
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <img class="rounded-circle" src="https://unavatar.io/twitter/fanyvamp" width="50px" height="50px alt">
-        <a class="navbar-brand ms-lg-5 fs-3 fw-bold TxT">FanyVamp</a>
+      
+        <a class="navbar-brand ms-lg-2 fs-4 fw-bold" href="#Inicio"><img class="rounded-circle" src="https://unavatar.io/twitter/fanyvamp" width="50px" height="50px alt"><span class="ms-lg-2 ms-md-2 ms-sm-2 ms-xs-2">FanyVamp</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav me-lg-5">
                 <li class="nav-item">
-                    <a class="nav-link fw-bold text-light" href="#twitch">Twitch</a>
+                    <a class="nav-link fw-bold text-light" href="#Twitch">Twitch</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold text-light" href="#sobre-mi">Sobre mí</a>
+                  <a class="nav-link fw-bold text-light" href="#Novedades">Novedades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold text-light" href="#novedades">Novedades</a>
+                  <a class="nav-link fw-bold text-light" href="#Comisiones">Comisiones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold text-light" href="#fanarts">FanArts</a>
+                    <a class="nav-link fw-bold text-light" href="#Historia">Historia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold text-light" href="#redes">Redes</a>
+                    <a class="nav-link fw-bold text-light" href="#FanArts">FanArts</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-  <div id="twitch" class="BG" ><h1 class="text-center fw-bold">Stream en Vivo</h1></div>
-  <div class="container my-2">
-    <div class="row">
-      <div class="col-sm-12 mx-widht">
-        <div id="twitch-embed">
-          <iframe src="https://player.twitch.tv/?channel=fanyvamp&parent=fanyvamp.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-          <iframe src="https://www.twitch.tv/embed/fanyvamp/chat?parent=fanyvamp.github.io" frameborder="0" scrolling="no" height="378" width="350"></iframe>
-      </div>
-      </div>
-    </div>
-  </div>
-  <div id="sobre-mi" class="BG"><h1 class="text-center fw-bold">Sobre Mí</h1></div>
-  <div class="container my-2">
+
+<div id="Inicio" class="Top"><h1 class="text-light text-center fw-bold">¡Bienvenido!</h1></div>
+  <div class="container">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <p class="text-light fw-bold text-center">Holis buenas soy una vtuber vampira amante de los gatitos mi acompañante gatuno llamado nekokun me encanta los juegos y poder convivir con mis amigos y expectadores espero puedas visitarme y puedan pasarla bien ❤️</p>
+        <p class="text-light fw-bold text-center text-shadow">Holis buenas soy una vtuber vampira amante de los gatitos, mi acompañante gatuno se llama nekokun, me encanta los juegos, poder convivir con mis amigos y expectadores ¡Espero puedas visitarme y puedan pasarla bien! ❤️</p>
       </div>
     </div>
   </div>
-  <div id="novedades" class="BG"><h1 class="text-center fw-bold">Novedades</h1></div>
-  <div class="container my-2">
+  <div id="Twitch" class="Section"><h1 class="text-light text-center fw-bold">Stream en Vivo</h1></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div id="twitch-embed">
+          <iframe src="https://player.twitch.tv/?channel=fanyvamp&parent=fanyvamp.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="90%"></iframe>
+          <iframe src="https://www.twitch.tv/embed/fanyvamp/chat?parent=fanyvamp.github.io" frameborder="0" scrolling="no" height="378" width="30%"></iframe>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="Novedades" class="Section"><h1 class="text-light text-center fw-bold">Novedades</h1></div>
+  <div class="container">
     <div class="row">
       <div class="col-md-8 mx-auto">
         <div class="container">
-          <div class="row Bordecito">
+          <div class="row">
             <div class="col-md-12">
               <div class="d-flex justify-content-center">
-                <a class="twitter-timeline "  data-width="620" data-height="500" href="https://twitter.com/FanyVamp?ref_src=twsrc%5Etfw">Tweets by FanyVamp</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                <a class="twitter-timeline "  data-width="620" data-height="500" href="https://twitter.com/FanyVamp?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
               </div>
             </div>
           </div>
@@ -76,104 +80,64 @@
     </div>
   </div>
     
-
-  <div>
-
-  </div class="container">
-
-  <iframe id='kofiframe' src='https://ko-fi.com/streamalerts/goaloverlay/sa_da35f351-ce84-4a00-89e7-cc3d4c56bc11'></iframe>
-
-    <div>
-        <div id="fanarts" class="BG"><h1 class="text-center fw-bold">FanArts</h1></div>
+  <div id="Comisiones" class="Section"><h1 class="text-light text-center fw-bold">Comisiones</h1>
+  <div class="container">
+    <div class="row">
+       <div class="col-md-8 mx-auto">
+          <p class="text-light fw-bold text-center">Puedes Comisionarme Algun Dibujo O Promoción Aquí, Y Ayudarme Con Mis Metas:</p>
+          <a href="https://ko-fi.com/fanyvamp/commissions">
+            <img src="Sources/Examples/Kofi.png" alt="Kofi" class="Kofi shake-slow">
+          </a>
+          <p class="text-light fw-bold text-center">Meta Actual:</p>
+          <iframe id='kofiframe' src='https://ko-fi.com/streamalerts/goaloverlay/sa_da35f351-ce84-4a00-89e7-cc3d4c56bc11'></iframe>
+       </div>
     </div>
-    <div class="container my-2">
+  </div>
+  </div>
+
+  <div id="Historia" class="Section"><h1 class="text-light text-center fw-bold">Historia</h1></div>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p class="text-light fw-bold text-center">Soy una humana que reencarno como una vampiresa, que tiene un acompañante gatuno, llamado nekokun, con el tiempo me conoceras mejor y sabras exactamente lo que soy</p>
+          <a href="https://noveltoon.mobi/es/la-traicion-del-reino?content_id=3065102">
+            <img src="Sources/Examples/Historia.png" alt="Historia" class="Historia shake-slow">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="FanArts" class="Section"><h1 class="text-light text-center fw-bold">FanArts</h1></div>
+    <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto">
             <p class="text-light fw-bold text-center">¿Quieres Hacerme Un FanArt O Ver Los Que Me Han Hecho? Entra A La Imagen:</p>
               <div class="text-center">
-                <a href="Fanarts">
-                  <img src="Sources/Example-Fanarts/fanarts-section.png" alt="Fany">
+                <a href="FanArts" target="_blank">
+                  <img src="Sources/Examples/FanArts-Section.png" alt="Fany" class="shake-slow">
                 </a>          
             </div>          
           </div>
         </div>
       </div>
 
-    <div id="redes" class="BG"><h1 class="text-center fw-bold">Redes</h1></div>
-<div class="container my-2">
-    <div class="row">
-      <div class="col-md-8 mx-auto">
-        <p class="text-light fw-bold text-center">Sígueme En Mis Redes Sociales Para Estar Al Tanto De Mis Transmisiones En Vivo, Novedades Y Más:</p>
-        <div class="text-center">
-          <a href="https://www.instagram.com/fanyvampoficcial/" class="btn active mx-2 Instagram fw-bold text-light" target="_blank"><img src="https://www.instagram.com/favicon.ico"></a>
-          <a href="https://www.youtube.com/@fany_vamp" class="btn btn-custom active mx-2 YouTube fw-bold text-light" target="_blank"><img src="https://www.youtube.com/favicon.ico"></a></a>
-          <a href="https://www.tiktok.com/@fany_vamp" class="btn btn-custom active mx-2 TikTok fw-bold text-light" target="_blank"><img src="https://www.tiktok.com/favicon.ico"></a></a>
-          <a href="https://noveltoon.mobi/es/la-traicion-del-reino?content_id=3065102" class="btn btn-custom active mx-2 Discord fw-bold text-light" target="_blank"><img src="https://noveltoon.mobi/official/noveltoon/icon-128.png"></a></a>         
-          <a href="https://discord.gg/AzzJGkstsz" class="btn btn-custom active mx-2 Discord fw-bold text-light" target="_blank"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg" style="width: 40px; height: auto;"></a></a>          
-          </div>        
-      </div>
-    </div>
-  </div>
-
-
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <p class="text-light fw-bold">Contacto: contactofanyvamp@gmail.com</p>
-              <a href="https://ko-fi.com/fanyvamp">Donaciones y Comisiones</a>
+      <footer class="bg-dark">
+        <div class="container-fluid">
+        <div class="row">
+              <div class="col-md-8 mx-auto">
+                <p class="text-light fw-bold text-center translucent">Redes:</p>
+                <div class="text-center">
+                  <a href="https://kick.com/fanyvamp" class="btn active shake" target="_blank"><img src="Sources/Icon/Kick.svg" alt="Icon"></a></a>
+                  <a href="https://www.instagram.com/fanyvampoficcial/" class="btn active shake" target="_blank"><img src="Sources/Icon/Instagram.svg" alt="Icon"></a>
+                  <a href="https://www.youtube.com/@fany_vamp" class="btn active shake" target="_blank"><img src="Sources/Icon/Youtube.svg" alt="Icon"></a></a>
+                  <a href="https://www.tiktok.com/@fany_vamp" class="btn active shake" target="_blank"><img src="Sources/Icon/Tiktok.svg" alt="Icon"></a></a>
+                  <a href="https://discord.gg/AzzJGkstsz" class="btn active shake" target="_blank"><img src="Sources/Icon/Discord.svg" alt="Icon"></a></a>          
+                  </div>        
+              </div>
             </div>
           </div>
         </div>
       </footer>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
-
-      <script>
-        const sr = ScrollReveal();
-        
-        sr.reveal('.container', {
-            duration: 3000,   
-            origin: 'bottom', 
-            distance: '-20px', 
-            delay: 200,       
-            easing: 'ease-in-out', 
-        });
-
-        sr.reveal('.BG', {
-            duration: 3000,   
-            origin: 'bottom', 
-            distance: '-20px', 
-            delay: 200,       
-            easing: 'ease-in-out', 
-        });
-    </script>
-    <script>
-function hideHash() {
-  history.replaceState({}, document.title, window.location.href.split("#")[0]);
-    }
-    </script>
-    
-    <script>
-    function scrollToSection(sectionId) {
-  var div = document.getElementById(sectionId);
-  div.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest"
-  });
-}
-
-window.onload = function() {
-  // Add event listeners to the navigation links
-  var links = document.querySelectorAll("nav a");
-  for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function(event) {
-      event.preventDefault();
-      scrollToSection(this.href.split("#")[1]);
-    });
-  }
-};
-    </script>
-
-    </body>
-    </html>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
