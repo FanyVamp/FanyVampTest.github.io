@@ -1,4 +1,4 @@
-const sr = ScrollReveal();
+window.sr = ScrollReveal();
 
 sr.reveal('.container', {
     duration: 3000,   

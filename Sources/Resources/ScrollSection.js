@@ -1,4 +1,4 @@
-const scrollToSection = sectionId =>
+var scrollToSection = sectionId =>
   document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
 
 window.onload = () =>
@@ -9,9 +9,13 @@ window.onload = () =>
     })
   );
   window.onload = () =>
-  document.querySelectorAll("a:not(.no-smooth-scroll)").forEach(link => {
+  document.querySelectorAll("nav a:not(.no-smooth-scroll)").forEach(link => {
     link.addEventListener("click", event => {
       event.preventDefault();
       scrollToSection(link.hash.slice(1));
     });
   });
+
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+  

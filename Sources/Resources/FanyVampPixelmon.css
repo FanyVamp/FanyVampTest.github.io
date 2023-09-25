@@ -1,0 +1,44 @@
+#main-container{
+  background-image: url(Profile/Pixelmon.png);
+  background-size: 100% 97%;
+  background-position: center 75px;
+  background-repeat: no-repeat;
+  margin-top: 76px;
+  margin-bottom: 103px;
+}
+p{
+  color:cornflowerblue;
+}
+.Top{
+  padding-top: 2rem;
+}
+ .accordion-body ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.accordion-body ul li{
+  margin: 0 10px 10px 0; 
+}
+.accordion-button,.accordion-item{
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: none;
+}
+.accordion-button:not(.collapsed){
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.Icon{
+  width: 5rem;
+  height: 5rem;
+  padding: 0.25rem;
+}
+.modal-open footer{
+  width: 102%;
+  box-sizing: border-box;
+}
+.X{
+  background-color: #FFFFFF;
+}

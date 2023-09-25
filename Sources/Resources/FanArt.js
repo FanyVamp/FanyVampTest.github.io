@@ -1,4 +1,4 @@
-const folderUrl = 'https://api.github.com/repos/fanyvamp/fanyvamptest.github.io/contents/Sources/Fanarts/';
+const folderUrl = 'https://api.github.com/repos/fanyvamp/fanyvamp.github.io/contents/Sources/Fanarts/';
     fetch(folderUrl)
         .then(response => response.json())
         .then(data => {
