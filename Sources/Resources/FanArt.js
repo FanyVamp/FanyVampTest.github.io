@@ -1,4 +1,4 @@
-const folderUrl = 'https://api.github.com/repos/fanyvamp/fanyvamp.github.io/contents/Test/';
+const folderUrl = 'https://api.github.com/repos/fanyvamp/fanyvamptest.github.io/contents/Test/';
 
 $.get(folderUrl).done(data => $('#imageContainer').append(data.reverse().filter(item => item.type === 'file').map(item => 
     $('<div>', { class: 'FanArt col-sm-6 col-md-4 col-lg-3' }).append(
