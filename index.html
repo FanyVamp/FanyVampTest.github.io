@@ -51,14 +51,25 @@
       </div>
     </div>
   </div>
-  <div id="Twitch" class="Section"><h1 class="text-light text-center fw-bold">Stream en Vivo</h1></div>
+  <div  class="Section"><h1 class="text-light text-center fw-bold">Stream en Vivo</h1></div>
   <div class="container">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <div id="twitch-embed">
-          <iframe src="https://player.twitch.tv/?channel=fanyvamp&parent=fanyvamp.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="90%"></iframe>
-          <iframe src="https://www.twitch.tv/embed/fanyvamp/chat?parent=fanyvamp.github.io" frameborder="0" scrolling="no" height="378" width="37%"></iframe>
-      </div>
+        <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "fanyvampart",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["fanyvamp.github.io"]
+      });
+    </script>
       </div>
     </div>
   </div>
