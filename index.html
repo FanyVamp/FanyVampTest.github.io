@@ -105,35 +105,49 @@
 
         <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
-        <script>
-          $(document).ready(function() {
-            
-            var twitchFany = new Twitch.Embed("twitch-embed-Fany", {
-              width: 854,
-              height: 480,
-              channel: "fanyvamp",
-              parent: ["fanyvamp.github.io"]
-            });
-        
-            var twitchFanyArt = new Twitch.Embed("twitch-embed-FanyArt", {
-              width: 854,
-              height: 480,
-              channel: "fanyvampart",
-              parent: ["fanyvamp.github.io"]
-            });
+       <script>
+  $(document).ready(function() {
+    // Crea los objetos de incrustación de Twitch
+    var twitchFany = new Twitch.Embed("twitch-embed-Fany", {
+      width: 854,
+      height: 480,
+      channel: "fanyvamp",
+      parent: ["fanyvamp.github.io"]
+    });
+
+    var twitchFanyArt = new Twitch.Embed("twitch-embed-FanyArt", {
+      width: 854,
+      height: 480,
+      channel: "fanyvampart",
+      parent: ["fanyvamp.github.io"]
+    });
+
+    // Al cambiar de slide en el carrusel
+    $('#carouselExampleControls').on('slid.bs.carousel', function (e) {
+      // Obtener el índice del slide activo
+      var index = $('.carousel-inner .carousel-item.active').index();
+
+      // Pausar ambos streams de Twitch
+      twitchFany.pause();
+      twitchFanyArt.pause();
+
+      // Reanudar el stream de Twitch correspondiente al slide activo
+      if (index === 0) {
+        twitchFany.play();
+      } else if (index === 1) {
+        twitchFanyArt.play();
+      }
+    });
+
+    // Pausa el stream de FanyVampArt después de que el carrusel se haya cargado completamente
+    $('#carouselExampleControls').on('slid.bs.carousel', function (e) {
+      if ($(e.relatedTarget).index() === 1) {
         twitchFanyArt.pause();
-            $('#carouselExampleControls').on('slid.bs.carousel', function (e) {
-              var index = $('.carousel-inner .carousel-item.active').index();
-              twitchFany.pause();
-              twitchFanyArt.pause();
-              if (index === 0) {
-                twitchFany.play();
-              } else if (index === 1) {
-                twitchFanyArt.play();
-              }
-            });
-          });
-        </script>
+      }
+    });
+  });
+</script>
+
         
       </div>
     </div>
