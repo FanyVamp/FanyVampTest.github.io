@@ -3,21 +3,28 @@
 <head>
   <title>Fany Vampirina</title>
   <!-- Página Web Hecha Con Mucho Amor Y Cariño Por KC8 -->
+  <meta name="google-site-verification" content="pz0qh0_8dZe1S6vYR3sszQW9yx-EeBwUVKPBTtihTTE" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="Sources/Icon/Logo.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+  <meta name="description" content="Bienvenido A La Página Web De FanyVamp Esta Página Esta Hecha Para Proporcionar Y Brindar Información Acerca De La Streamer Fany Vamp, Sus Redes Sociales, Novedades Y Mucho Más">
+  <meta name="keywords" content="FanyVamp,Fany Vamp,FanyVampirina,Fany Vampirina,FanyVamp FanArts,Fany Vamp FanArts">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="Sources/Resources/Libraries/Bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="Sources/Resources/Libraries/csshake/csshake.css">
   <link rel="stylesheet" href="Sources/Resources/FanyVamp.css"> 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="Sources/Resources/ScrollReveal.js"></script>
-  <script src="Sources/Resources/ScrollSection.js"></script>
+  <script src="Sources/Resources/Libraries/JQuery/jQuery3.7.1.js"></script>
+
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" class="scrollspy">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" class="scrollspy" id="main-container">
+
+<div id="preloader">
+  <img src="Sources/Examples/Logo.webp" alt="Logo">
+</div>
+
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       
-        <a class="navbar-brand ms-lg-2 fs-4 fw-bold" href="#Inicio"><img class="rounded-circle" src="https://unavatar.io/twitter/fanyvamp" width="50px" height="50px alt"><span class="ms-lg-2 ms-md-2 ms-sm-2 ms-xs-2">FanyVamp</span></a>
+        <a class="navbar-brand ms-lg-2 fs-4 fw-bold" href="#Inicio"><img class="rounded-circle" src="https://unavatar.io/twitter/FanyVamp" width="50px" height="50px" alt="Fany Vamp"><span class="ms-lg-2 ms-md-2 ms-sm-2 ms-xs-2">FanyVamp</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,6 +50,7 @@
     </div>
 </nav>
 
+<div class="content">
 <div id="Inicio" class="Top"><h1 class="text-light text-center fw-bold">¡Bienvenido!</h1></div>
   <div class="container">
     <div class="row">
@@ -51,25 +59,90 @@
       </div>
     </div>
   </div>
-  <div  class="Section"><h1 class="text-light text-center fw-bold">Stream en Vivo</h1></div>
+
+  <div id="Twitch" class="Section"><h1 class="text-light text-center fw-bold">Stream en Vivo</h1></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12 mx-auto">
-        <div id="twitch-embed"></div>
 
-    <!-- Load the Twitch embed JavaScript file -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        <div class="d-flex justify-content-center">
+        
+        <div id="carouselExampleControls" class="carousel carousel-fade">
+       
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2 class="d-flex justify-content-between align-items-center">
+                <span>FanyVamp</span>
+                <div class="text-right">
+                <button class="btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                    <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                  </svg>
+                </button>
+                <button class="btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                  </svg>
+                </button>
+                </div>
+              </h2>
+              <div id="twitch-embed-Fany" class="carousel-twitch"></div>
+            </div>
+            
+            <div class="carousel-item">
+              <h2 class="d-flex justify-content-between align-items-center">
+                <span>FanyVamp Art</span>
+                <div class="text-right">
+                <button class="btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                    <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                  </svg>
+                </button>
+                <button class="btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                  </svg>
+                </button>
+                </div>
+              </h2>
+              <div id="twitch-embed-FanyArt" class="carousel-twitch"></div>
+            </div>
+          </div>
+        </div>
+        </div>
 
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: "fanyvamp",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["fanyvamp.github.io"]
-      });
-    </script>
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <script>
+          $(document).ready(function() {
+            
+            var twitchFany = new Twitch.Embed("twitch-embed-Fany", {
+              width: 854,
+              height: 480,
+              channel: "fanyvamp",
+              parent: ["fanyvamp.github.io"]
+            });
+        
+            var twitchFanyArt = new Twitch.Embed("twitch-embed-FanyArt", {
+              width: 854,
+              height: 480,
+              channel: "fanyvampart",
+              parent: ["fanyvamp.github.io"]
+            });
+        
+            $('#carouselExampleControls').on('slid.bs.carousel', function (e) {
+              var index = $('.carousel-inner .carousel-item.active').index();
+              twitchFany.pause();
+              twitchFanyArt.pause();
+              if (index === 0) {
+                twitchFany.play();
+              } else if (index === 1) {
+                twitchFanyArt.play();
+              }
+            });
+          });
+        </script>
+        
       </div>
     </div>
   </div>
@@ -78,32 +151,43 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <div class="container">
-          <div class="row">
             <div class="col-md-12">
               <div class="d-flex justify-content-center">
                 <a class="twitter-timeline "  data-width="620" data-height="500" href="https://twitter.com/FanyVamp?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+              </div>
+              <div class="col-md-12">
+                
+                  <p class="text-light fw-bold text-center">Mi Texture Pack De Minecraft:</p>
+                  <div class="text-center">
+                  <a href=" https://www.mediafire.com/file/xzwhtlixcaohget/MistaKesent3.0.zip/file" target="_blank" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" fill="currentColor" color="green" class="bi bi-boxes img-fluid shake-slow mc" viewBox="0 0 16 16" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Texture Pack">
+                      <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"/>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>        
     </div>
-    </div>
-  </div>
     
-  <div id="Comisiones" class="Section"><h1 class="text-light text-center fw-bold">Comisiones</h1>
+  <div id="Comisiones" class="Section"><h1 class="text-light text-center fw-bold">Comisiones</h1></div>
   <div class="container">
     <div class="row">
        <div class="col-md-8 mx-auto">
           <p class="text-light fw-bold text-center">Puedes Comisionarme Algun Dibujo O Promoción Aquí, Y Ayudarme Con Mis Metas:</p>
-          <a href="https://ko-fi.com/fanyvamp/commissions">
-            <img src="Sources/Examples/Kofi.png" alt="Kofi" class="Kofi shake-slow" target="_blank">
+          <div class="text-center">
+          <a href="https://vgen.co/FanyVamp" target="_blank">
+            <img src="Sources/Examples/VGen.webp" alt="VGen" class="VGen shake-slow img-fluid" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Comisiones">
           </a>
+          <a href="https://ko-fi.com/fanyvamp/commissions" target="_blank">
+            <img src="Sources/Examples/Kofi.webp" alt="Kofi" class="Kofi shake-slow img-fluid" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Comisiones">
+          </a>
+          </div>
           <p class="text-light fw-bold text-center">Meta Actual:</p>
           <iframe id='kofiframe' src='https://ko-fi.com/streamalerts/goaloverlay/sa_da35f351-ce84-4a00-89e7-cc3d4c56bc11'></iframe>
        </div>
     </div>
-  </div>
   </div>
 
   <div id="Historia" class="Section"><h1 class="text-light text-center fw-bold">Historia</h1></div>
@@ -111,9 +195,11 @@
       <div class="row">
         <div class="col-md-8 mx-auto">
           <p class="text-light fw-bold text-center">Soy una humana que reencarno como una vampiresa, que tiene un acompañante gatuno, llamado nekokun, con el tiempo me conoceras mejor y sabras exactamente lo que soy</p>
+          <div class="text-center">
           <a href="https://noveltoon.mobi/es/la-traicion-del-reino?content_id=3065102" target="_blank">
-            <img src="Sources/Examples/Historia.png" alt="Historia" class="Historia shake-slow">
+            <img src="Sources/Examples/Historia.webp" alt="Historia" class="Historia shake-slow" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="La Tración Del Reino">
           </a>
+        </div>
         </div>
       </div>
     </div>
@@ -125,31 +211,55 @@
             <p class="text-light fw-bold text-center">¿Quieres Hacerme Un FanArt O Ver Los Que Me Han Hecho? Entra A La Imagen:</p>
               <div class="text-center">
                 <a href="FanArts">
-                  <img src="Sources/Examples/FanArts-Section.png" alt="Fany" class="shake-slow">
+                  <img src="Sources/Examples/FanArts-Section.webp" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="FanArts" alt="Fany" class="shake-slow">
                 </a>          
             </div>          
           </div>
         </div>
       </div>
+</div>
 
-      <footer class="bg-dark">
-        <div class="container-fluid">
-        <div class="row">
-              <div class="col-md-8 mx-auto">
-                <p class="text-light fw-bold text-center translucent">Redes:</p>
-                <div class="text-center">
-                  <a href="https://kick.com/fanyvamp" class="btn active shake" target="_blank"><img src="Sources/Icon/Kick.svg" alt="Icon"></a></a>
-                  <a href="https://www.instagram.com/fanyvampoficcial/" class="btn active shake" target="_blank"><img src="Sources/Icon/Instagram.svg" alt="Icon"></a>
-                  <a href="https://www.youtube.com/@fany_vamp" class="btn active shake" target="_blank"><img src="Sources/Icon/Youtube.svg" alt="Icon"></a></a>
-                  <a href="https://www.tiktok.com/@fany_vamp" class="btn active shake" target="_blank"><img src="Sources/Icon/Tiktok.svg" alt="Icon"></a></a>
-                  <a href="https://discord.gg/AzzJGkstsz" class="btn active shake" target="_blank"><img src="Sources/Icon/Discord.svg" alt="Icon"></a></a>          
-                  </div>        
-              </div>
-            </div>
-          </div>
+<footer class="bg-dark">
+  <div class="container-fluid">
+  <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p class="text-light fw-bold text-center translucent">Redes:</p>
+          <div class="text-center">
+            <a href="https://www.youtube.com/@fany_vamp" class="btn active" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#F8F9FA" data-bs-toggle="tooltip" data-bs-title="FanyVamp Oficial" alt="Icon"  class="bi bi-youtube shake" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/fanyvampoficcial/" class="btn active" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#F8F9FA" data-bs-toggle="tooltip" data-bs-title="Instagram" alt="Icon" class="bi bi-instagram shake" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+            </a>
+            <a href="https://discord.gg/AzzJGkstsz" class="btn active" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#F8F9FA" data-bs-toggle="tooltip" data-bs-title="Vamirinos" alt="Icon" class="bi bi-discord shake" viewBox="0 0 16 16">
+                <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@fany_vamp" class="btn active" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#F8F9FA" data-bs-toggle="tooltip" data-bs-title="TikTok" alt="Icon" class="bi bi-tiktok shake" viewBox="0 0 16 16">
+                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@fanyvamp" class="btn active" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#F8F9FA" data-bs-toggle="tooltip" data-bs-title="FanyVamp Juegos" alt="Icon" class="bi bi-youtube shake" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+              </svg>
+            </a>        
+            </div>        
         </div>
-      </footer>
+      </div>
+    </div>
+  </div>
+</footer>
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="Sources/Resources/Libraries/Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="Sources/Resources/ScrollReveal.js"></script>
+    <script src="Sources/Resources/ScrollSection.js"></script>
   </body>
 </html>
