@@ -105,7 +105,7 @@
 
         <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
-       <script>
+      <script>
   document.addEventListener('DOMContentLoaded', function () {
     var twitchFany = new Twitch.Embed("twitch-embed-Fany", {
       width: 854,
@@ -130,14 +130,15 @@
       // Verifica qué stream está activo y pausa el otro
       if (activeIndex === 1) {
         twitchFany.play(); // Reproduce el stream de FanyVamp
-        twitchFanyArt.pause(); // Pausa el stream de FanyVampArt
+        twitchFanyArt.setMuted(true); // Apaga el mute del stream de FanyVampArt
       } else if (activeIndex === 2) {
-        twitchFany.pause(); // Pausa el stream de FanyVamp
+        twitchFany.setMuted(true); // Apaga el mute del stream de FanyVamp
         twitchFanyArt.play(); // Reproduce el stream de FanyVampArt
       }
     });
   });
 </script>
+
       </div>
     </div>
   </div>
